@@ -12,6 +12,8 @@ gem 'coffee-script'
 gem 'sass'
 gem 'uglifier'
 
+gem 'twilio-ruby', '~> 3.16.1'
+
 group :test, :development do
   gem 'foreman'
   gem 'jasmine'
