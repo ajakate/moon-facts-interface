@@ -1,4 +1,4 @@
-class RemarktApp < Sinatra::Base
+class MoonApp < Sinatra::Base
 
   # Middleware
   register Sinatra::AssetPack
@@ -35,5 +35,13 @@ class RemarktApp < Sinatra::Base
 
   get '/' do
     slim :index
+  end
+
+  post '/send_message' do
+
+  end
+
+  get '/get_message_logs' do
+
   end
 end

@@ -7,7 +7,7 @@ doctype html
 == "<!--[if (gt IE 9)|!(IE)]><!--> <html lang=\"en\"> <!--<![endif]-->"
 
 head
-  title Remarkt
+  title Welcome to Moon Facts HQ!
 
   == "<!--[if lt IE 9]>#{js :html5shiv}<![endif]-->"
   
@@ -26,20 +26,12 @@ body
 
     header
       ul.nav.nav-pills.pull-right
-        - if current_user.nil?
           li
-            a href="/signup" Signup
-        - else
+            a href="/" Send a New Fact!
           li
-            a href="/" Home
+            a href="/phone_log" View Current Phone Log
           li
-            a href="/units" Units
-          li
-            a href="/units/new" Create Unit
-          li
-            a href="/users/#{current_user.username}" #{current_user.name}
-          li
-            a href="/logout" Logout
-      h3.text-muted Remarkt
+            a Current Number: #{Math.cos(2)}
+      h3.text-muted Moon-Facts
       
     == yield

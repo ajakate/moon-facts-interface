@@ -1,4 +1,20 @@
-div#container
-  p The ultimate inventory managenment solution
+doctype html
+html
+  head
+    title Welcome to Moon Facts HQ!
 
+  body
+    h3 Send a NiFtY moon fact to whomever you want!
+    h1
+    
+form role="form" action="/send_message" method="POST"
 
+  div.form-group
+    label for="numbers" Please enter the numbers you want to send the fact to, comma separated like shown below:
+    input.form-control type="text" name="numbers" placeholder="3125551234,8479770465"
+
+  div.form-group
+    label for="body" Message Body:
+    input.form-control type="text" name="body" placeholder="Did you know that the moon doesn't actually exist?"
+
+  input.btn.btn-primary type="submit" value="Send Message"

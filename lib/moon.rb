@@ -4,7 +4,3 @@ lib_path = File.expand_path('../', __FILE__)
 
 Bundler.require(:default)
 
-Mongoid.load!('config/mongoid.yml')
-
-require 'remarkt/unit'
-require 'remarkt/user'
